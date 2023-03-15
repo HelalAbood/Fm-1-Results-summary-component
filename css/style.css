@@ -5,43 +5,34 @@
     --color-yellow:hsl(39, 100%, 56%);
     --color-green:hsl(166, 100%, 37%);
     --color-blue:hsl(234, 85%, 45%);
-    --back-color-blue:hsl(252, 100%, 67%);
-    --back-royal-blue:hsl(241, 81%, 54%);
-    --back-violet-blue:hsla(256, 72%, 46%, 1);
+    --pale-blue: hsl(221, 100%, 96%);
+    --light-back:hsl(241, 100%, 89%);
+    --light-slate-blue: hsl(252, 100%, 67%);
+    --light-royal-blue:hsl(241, 81%, 54%);
+    --color-circle: hsla(256, 72%, 46%, 1);
+    --color-circle2: rgba(36, 33, 202, 0);
+    --color-buttom: hsl(224, 30%, 27%);
 }
 body { 
     font-family: 'Hanken Grotesk', sans-serif;
 }
 
 .parent { 
-    background-color: rgba(252, 252, 252, 0.724);
+    background-color: var(--pale-blue);
     height: 100vh;
+    width: auto;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.contanair {
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 10px;
-    padding-right: 10px;
-}
-@media (min-width: 767px) { 
-    .contanair { 
-        width: 750px;
+@media (max-width: 767px) { 
+    .parent .contanair{ 
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
     }
 }
-@media (min-width: 998px) { 
-    .contanair { 
-        width: 970px;
-    }
-}
-@media (min-width: 1200px) { 
-    .contanair { 
-        width: 1170px;
-    }
-}
-
 .contanair .holder { 
     display: flex;
     align-items: center;
@@ -58,7 +49,8 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    background-color: var(--back-color-blue);
+    background-color: var(--light-royal-blue);
+    background-image: linear-gradient(to bottom, var(--light-slate-blue) , var(--light-royal-blue));
     border-radius: 15px;
     padding: 10px;
     margin: 10px;
@@ -72,7 +64,7 @@ body {
 .contanair .holder .left .circle {
     width: 140px;
     height: 140px;
-    background-color: var(--back-violet-blue);
+    background-image: linear-gradient(to bottom,  var(--light-royal-blue), var(--color-circle2) );
     border-radius: 50%;
     text-align: center;
     display: flex;
@@ -80,6 +72,7 @@ body {
     align-items: center;
     flex-direction: column;
 }
+
 .contanair .holder .left .circle h2 { 
     color: white;
     font-size: 60px;
@@ -87,7 +80,7 @@ body {
     margin-top: 0;
 }
 .contanair .holder .left .circle p { 
-    margin-top: -20px;
+    margin-top: -10px;
     font-size: 14px;
     color: var(--color-main-heading);
 
@@ -177,19 +170,18 @@ body {
     color: var(--color-main-heading);
 }
 .contanair .holder .right .cont.spic { 
-    background-color: var(--back-violet-blue);
+    background-color: var(--color-buttom);
     border-radius: 80px;
     margin-top: 30px;
     margin-bottom: 10px;
 }
 .contanair .holder .right .cont.spic:hover { 
-    background-color: var(--back-color-blue);
+    background-color: var(--light-royal-blue);
 }
 .contanair .holder .right .cont a { 
     text-decoration: none;
     margin-left: auto;
     margin-right: auto;
     color: white;
-
 }
 

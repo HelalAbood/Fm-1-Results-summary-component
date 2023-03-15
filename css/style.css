@@ -1,0 +1,195 @@
+
+:root { 
+    --color-main-heading: rgb(200, 200, 200);
+    --color-red:hsl(0, 100%, 67%);
+    --color-yellow:hsl(39, 100%, 56%);
+    --color-green:hsl(166, 100%, 37%);
+    --color-blue:hsl(234, 85%, 45%);
+    --back-color-blue:hsl(252, 100%, 67%);
+    --back-royal-blue:hsl(241, 81%, 54%);
+    --back-violet-blue:hsla(256, 72%, 46%, 1);
+}
+body { 
+    font-family: 'Hanken Grotesk', sans-serif;
+}
+
+.parent { 
+    background-color: rgba(252, 252, 252, 0.724);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.contanair {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+@media (min-width: 767px) { 
+    .contanair { 
+        width: 750px;
+    }
+}
+@media (min-width: 998px) { 
+    .contanair { 
+        width: 970px;
+    }
+}
+@media (min-width: 1200px) { 
+    .contanair { 
+        width: 1170px;
+    }
+}
+
+.contanair .holder { 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+@media (max-width: 767px) { 
+    .contanair .holder  { 
+        flex-direction: column;
+        padding: 0;
+    }
+}
+
+.contanair .holder .left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: var(--back-color-blue);
+    border-radius: 15px;
+    padding: 10px;
+    margin: 10px;
+    align-items: center;
+    width: 250px;
+}
+.contanair .holder .left h3 { 
+    color: var(--color-main-heading);
+    font-weight: 500;
+}
+.contanair .holder .left .circle {
+    width: 140px;
+    height: 140px;
+    background-color: var(--back-violet-blue);
+    border-radius: 50%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.contanair .holder .left .circle h2 { 
+    color: white;
+    font-size: 60px;
+    margin-bottom: 10px;
+    margin-top: 0;
+}
+.contanair .holder .left .circle p { 
+    margin-top: -20px;
+    font-size: 14px;
+    color: var(--color-main-heading);
+
+}
+.contanair .holder .left .info { 
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    color: var(--color-main-heading);
+    margin-top: -10px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.contanair .holder .left .info h2 { 
+    margin-bottom: 0px;
+    margin-top: 30px;
+    color: white;
+}
+.c
+.contanair .holder .left .info p { 
+    max-width: 150px;
+    margin-top: 0;
+}
+.contanair .holder .right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: white;
+    border-radius: 15px;
+    padding: 10px;
+    margin: 10px;
+    width: 250px;
+    margin-left: -10px;
+    box-shadow: 0 0 3px 0px #ddd;
+}
+@media (max-width: 767px) { 
+    .contanair .holder .left { 
+        margin-bottom: -10px;
+        z-index: 1;
+    }
+    .contanair .holder .right { 
+        padding: 10px;
+        margin: -10px;
+    }
+}
+.contanair .holder .right h3 { 
+    padding-left: 10px;
+}
+
+.contanair .holder .right .content { 
+    position: relative;
+    padding-left: 10px;
+}
+.contanair .holder .right .cont {
+    padding: 10px 15px;
+    margin-bottom: 15px;
+    background-color: rgb(239, 239, 239);
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.contanair .holder .right .cont h4 { 
+    margin-left: -50px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.contanair .holder .right .cont h4.red { 
+    color: var(--color-red);
+}
+.contanair .holder .right .cont h4.yellow { 
+    color: var(--color-yellow);
+}
+.contanair .holder .right .cont h4.green { 
+    color: var(--color-green);
+}
+.contanair .holder .right .cont h4.blue { 
+    color: var(--color-blue);
+}
+.contanair .holder .right .cont span.black { 
+    color: black;
+}
+.contanair .holder .right .cont span.offwhite { 
+    color: var(--color-main-heading);
+}
+.contanair .holder .right .cont.spic { 
+    background-color: var(--back-violet-blue);
+    border-radius: 80px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+.contanair .holder .right .cont.spic:hover { 
+    background-color: var(--back-color-blue);
+}
+.contanair .holder .right .cont a { 
+    text-decoration: none;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+
+}
+
